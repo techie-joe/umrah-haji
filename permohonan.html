@@ -14,7 +14,7 @@
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
                 // these IDs from EJS dashboard
-                emailjs.sendForm('service_uht001', 'email_uht001', this)
+                emailjs.sendForm('service_001', 'det_001', this)
                     .then(() => {
                         console.log('SUCCESS!');
                     }, (error) => {
