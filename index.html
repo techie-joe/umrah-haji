@@ -85,7 +85,7 @@
                             <i class="fas fa-flask"></i>
                         </i>
                         <samp id="host"></samp>
-                        <samp>.</samp>
+                        <samp>/base</samp>
                     </div>
                     <hr class="_hr"/>
                     <p class="desc _grey-text _small">Web Application Framework</p>
@@ -93,11 +93,42 @@
                 <hr class="_hr"/>
                 <nav class="test-nav">
                     <a href="/">home</a>
+                    <a href="./settings">settings</a>
+                    <a href="./storage">storage</a>
                     <hr class="_hr"/>
+                    <h6>Error pages :</h6>
+                    <div class="_flex">
+                        <div class="_rm">
+                            <div>
+                                <a onclick="event.preventDefault();throw('Error triggered by user.')" href="#" title="Simulate a runtime error">703-runtime</a>
+                            </div>
+                            <div>
+                                <a href="./test/noscript">702-noscript</a>
+                            </div>
+                            <div>
+                                <a href="./offline">701-offline</a>
+                            </div>
+                            <div>
+                                <a href="./error">700-error</a>
+                            </div>
+                        </div>
+                        <div class="_rm">
+                            <div>
+                                <a href="./fail">480-fail</a>
+                            </div>
+                            <div>
+                                <a href="./404">404-notfound</a>
+                            </div>
+                            <div>
+                                <a href="./404.html">404</a>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
                 <footer>
                     <hr class="_hr"/>
                     <p class="_hp" style="text-align:center">
+                      Copyright &copy;
                     </p>
                 </footer>
             </article>
