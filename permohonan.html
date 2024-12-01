@@ -13,8 +13,8 @@
         window.onload = function() {
             document.getElementById('contact-form').addEventListener('submit', function(event) {
                 event.preventDefault();
-                // these IDs from the previous steps
-                emailjs.sendForm('service_uht001', 'contact_form', this)
+                // these IDs from EJS dashboard
+                emailjs.sendForm('service_uht001', 'email_uht001', this)
                     .then(() => {
                         console.log('SUCCESS!');
                     }, (error) => {
