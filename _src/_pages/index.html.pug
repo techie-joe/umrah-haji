@@ -1,8 +1,17 @@
 extends ../_templates/html
 
+block append vars
+  -
+    title = 'Website Umrah Haji'
+  //- 
+
 block append style
   style.
   //- 
+
+block append meta
+  //- pwa manifest
+  link(rel="manifest" href=homeUrl+"pwa.json")/
 
 block main
   main#_main
