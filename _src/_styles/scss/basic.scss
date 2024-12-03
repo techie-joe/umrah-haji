@@ -1,0 +1,15 @@
+@use "colors";
+
+/* Default (light theme) */
+html {
+  background-color: var(--background-light);
+  color: var(--foreground-light);
+}
+
+/* Dark theme */
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: var(--background-dark);
+    color: var(--foreground-dark);
+  }
+}

@@ -1,0 +1,41 @@
+@use "html5";
+
+ /* mark red if you include but don't use */
+html { box-shadow: 0 3px red inset; }
+#_html { box-shadow: none; } /* remove mark when in use */
+
+._editorbar,
+#_html,
+#_body { @extend ._sans; }
+
+._editorbar {
+  padding:1em;
+  background-color: #111;
+  color:#888;
+}
+
+#_main { margin:3em auto; }
+
+#_main .h2,
+#_main h1 { font-weight:normal; font-size:2em; }
+
+@media only screen and (max-width: 499px) {
+  #_main .h2 { font-size:1.4em }
+}
+
+.gu { padding: 3px; }
+.o { background: #ccc; }
+._dark .o { background: #333; }
+
+.o1-1 { height:300px; }
+.o1-2 { height:300px; }
+.o2-2 { height:606px; }
+
+.o1-3 { height:150px; }
+.o2-3 { height:306px; }
+.o3-3 { height:462px; }
+
+.o1-4 { height:100px; }
+.o2-4 { height:206px; }
+.o3-4 { height:312px; }
+.o4-4 { height:418px; }
