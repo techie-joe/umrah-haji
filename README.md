@@ -1,3 +1,3 @@
 # Umrah Haji Website
 
-[Mohon Sekarang](permohonan.html)
+[Mohon Sekarang](https://techie-joe.github.io/umrah-haji/)
