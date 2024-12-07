@@ -177,11 +177,14 @@
                       "./js/base-v1.0.js",
                       "./js/storage-v1.0.js",
                       "./css/base-v1.0.css",
-                      "./",
                       "./settings/",
-                      "./storage/"
+                      "./storage/",
+                      "./404.html",
+                      "./"
                   ],
-                  progressiveFiles: []
+                  progressiveFiles: [
+                      
+                  ]
               });
               self.addEventListener("install", e.install),
               self.addEventListener("activate", e.activate),
