@@ -4,23 +4,9 @@
 html { box-shadow: 0 3px red inset; }
 #_html { box-shadow: none; } /* remove mark when in use */
 
-._editorbar,
-#_html,
-#_body { @extend ._sans; }
-
-._editorbar {
-  padding:1em;
-  background-color: #111;
-  color:#888;
-}
-
-#_main { margin:3em auto; }
-
-#_main .h2,
-#_main h1 { font-weight:normal; font-size:2em; }
+#_main { margin:1em auto; }
 
 @media only screen and (max-width: 499px) {
-  #_main .h2 { font-size:1.4em }
 }
 
 .gu { padding: 3px; }
