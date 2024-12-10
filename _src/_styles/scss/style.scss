@@ -4,7 +4,27 @@
 html { box-shadow: 0 3px red inset; }
 #_html { box-shadow: none; } /* remove mark when in use */
 
+#_html,
+#_body { font-family: "Poppins", Arial, sans-serif; }
+
 #_main { margin:1em auto; }
+
+#_header {
+  width:800px;
+  margin:auto;
+  padding:1em;
+
+  .main { width:550px; }
+  .faa { color:inherit }
+}
+
+.div-inline {
+  p { display:inline; }
+}
+
+.px-3 { padding: 0 1rem; }
+
+#_html .mr-2 { margin-right: 2px; }
 
 @media only screen and (max-width: 499px) {
 }

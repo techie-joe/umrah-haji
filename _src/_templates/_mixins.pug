@@ -15,11 +15,14 @@ mixin js(src)
 mixin img(src,alt,title)
 	img(src=src alt=alt title=title)&attributes(attributes)/
 
+mixin _
+	="\n"
+
 mixin a(href,title)
 	a(href=href title=title)&attributes(attributes): block
 
 mixin _a(href,title)
-	="\n"
+	+_
 	a(href=href title=title)&attributes(attributes): block
 
 mixin la(href,title)
@@ -27,3 +30,6 @@ mixin la(href,title)
 
 mixin backlink(title='Back to previous page')
 	a(onclick="event.preventDefault();window.history.back()" title=title)&attributes(attributes): block
+
+mixin fa(name)
+	i(class="fab fa-"+name)
